@@ -52,4 +52,10 @@ describe('Array', () => {
 			assert.deepEqual([1, 2, [3]], utils.concat([1], [2], [[3]]));
 		});
 	});
+
+	describe('Compact should create an array with all falsey values removed. The values false, null, 0, "", undefined, and NaN are falsey.',  () => {
+		it('All negatives removed', () => {
+			assert.deepEqual([1, 2, 3], utils.compact([0, 1, false, 2, '', 3]));
+		});
+	});
 });
