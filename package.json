@@ -1,0 +1,23 @@
+{
+  "name": "util",
+  "version": "1.0.0",
+  "description": "Package to test JavaScript skills",
+  "main": "index.js",
+  "author": "Joseph Lloyd",
+  "license": "MIT",
+  "scripts": {
+    "watch": "webpack --progress --colors --watch",
+    "test": "mocha --compilers js:babel-core/register"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-register": "^6.24.1",
+    "mocha": "^3.4.1",
+    "webpack": "^2.5.1"
+  }
+}
